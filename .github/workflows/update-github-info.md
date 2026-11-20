@@ -21,7 +21,9 @@ network:
 engine:
   id: copilot
   copilot-sdk: true
-  model: small
+  model: gpt-5-mini
+  env:
+    COPILOT_PROVIDER_WIRE_API: responses
 ---
 
 # Update Mona's GitHub Info website
