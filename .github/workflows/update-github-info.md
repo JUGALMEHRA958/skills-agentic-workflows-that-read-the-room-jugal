@@ -18,10 +18,7 @@ network:
     - github.com
     - github.blog
     - awesome-copilot.github.com
-engine:
-  id: copilot
-  copilot-sdk: true
-  model: gpt-4.1
+engine: copilot
 ---
 
 # Update Mona's GitHub Info website
