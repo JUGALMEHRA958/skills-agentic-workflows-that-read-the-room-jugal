@@ -12,7 +12,8 @@ safe-outputs:
     fallback-as-issue: false
 tools:
   edit:
-  web-fetch:
+  bash:
+    - "curl *"
 network:
   allowed:
     - github.com
@@ -20,10 +21,7 @@ network:
     - awesome-copilot.github.com
 engine:
   id: copilot
-  copilot-sdk: true
-  model: gpt-5.6-luna-free-auto
-  env:
-    COPILOT_PROVIDER_WIRE_API: responses
+  model: gpt-4.1
 ---
 
 # Update Mona's GitHub Info website
@@ -36,7 +34,7 @@ Use these sources:
 - GitHub Changelog: https://github.blog/changelog/
 - Awesome Copilot workflows: https://awesome-copilot.github.com/workflows/
 
-Web fetch https://github.blog/latest/, https://github.blog/changelog/, and https://awesome-copilot.github.com/workflows/.
+Fetch https://github.blog/latest/, https://github.blog/changelog/, and https://awesome-copilot.github.com/workflows/ using `curl -sL`.
 
 Update `site/content/github-info.md` with concise, practical updates for readers and include source context when content comes from the GitHub Blog, GitHub Changelog, or Awesome Copilot workflows.
 
