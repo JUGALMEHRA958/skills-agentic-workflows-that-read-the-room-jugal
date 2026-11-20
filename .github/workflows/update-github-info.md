@@ -18,7 +18,10 @@ network:
     - github.com
     - github.blog
     - awesome-copilot.github.com
-engine: copilot
+engine:
+  id: copilot
+  copilot-sdk: true
+  model: small
 ---
 
 # Update Mona's GitHub Info website
